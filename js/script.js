@@ -1,3 +1,4 @@
+"use strict"
 // let num = 10.5, num2 = 20;
 // let result = num + num2;
 // console.log(result);
@@ -265,21 +266,168 @@
 
 /**********************************************************************************************************/
 
-let shots = [
-	`попал`,
-	`попал`,
-	`промах`,
-	`попал`,
-	`промах`,
-	`попал`,
-	`промах`,
-];
-let hits = 0;
-let miss = 0;
-for(let i = 0; i < shots.length; i++){
-	let shot = shots[i];
-	if (shot === 'попал') {
-		
-	}
-}
-console.log(shots);
+// let shots = [
+// 	`попал`,
+// 	`попал`,
+// 	`промах`,
+// 	`попал`,
+// 	`промах`,
+// 	`попал`,
+// 	`промах`,
+// ];
+// let hits = 0;
+// let miss = 0;
+// for(let i = 0; i < shots.length; i++){
+// 	let shot = shots[i];
+// 	if (shot === shots[i]) {
+// 		console.log(`Количество попаданий:${shot}`);
+// 	} else {
+// 		console.log(`Количество промахов:${shot}`);
+// 	}
+// }
+
+/**********************************************************************************************************/
+
+// let symbol = prompt(`Введите символ`);
+// let result = ``;
+// for (let i = 0; i <= 7; i++) {
+// 	for (let j = 0; j <= 21; j++){
+// 		if (i === 3 && j === 11) {
+// 			result += `😁`;
+// 		} else {
+// 			result += symbol;
+// 		}
+// 	}
+// 	result += `\n`;
+// }
+// alert(result);
+
+/**********************************************************************************************************/
+
+// let number1 = +prompt(`Введите первое число`);
+// let number2 = +prompt(`Введите второе число`);
+// if (number1 > number2) {
+// 	alert(`Первое число больше чем второе`);
+// } else if (number1 < number2){
+// 	alert(`Второе число больше первого`);
+// } else {
+// 	alert(`Эти числа равны`);
+// }
+
+/**********************************************************************************************************/
+
+// let dice1 = Math.floor(Math.random() * 3 + 1);
+// let dice2 = Math.floor(Math.random() * 3 + 1);
+// let dice3 = Math.floor(Math.random() * 3 + 1);
+// if (dice1 === dice2 && dice2 === dice3) {
+	// 	console.log(`Вы выиграли`);
+	// } else {
+		// 	console.log(``);
+// }
+// console.log(dice1, dice2, dice3);
+
+/**********************************************************************************************************/
+
+// let random1 = Math.floor(Math.random() * 9 + 1);
+// let random2 = Math.floor(Math.random() * 9 + 1);
+// let table = +prompt(`${random1} * ${random2}`);
+// if (random1 * random2 === table) {
+// 	alert(`Верно`);
+// } else {
+// 	alert(`Неверно`);
+// }
+
+/**********************************************************************************************************/
+
+// let random1 = Math.floor(Math.random() * 9 + 1);
+// let random2 = Math.floor(Math.random() * 9 + 1);
+// let table = prompt(`${random1} * ${random2}`);
+// while (true) {
+// 	if (table === null) {
+	// 		break;
+	// 	}
+	// 	table = parseInt(`${random1} * ${random2}`);
+	// 	if (table <= 1000) {
+// 		+prompt(`${random1} * ${random2}`)
+// 	}
+// }
+
+/**********************************************************************************************************/
+
+// let getMessage = function () {
+// 	console.log(`Hello function`);
+// }
+// getMessage();
+
+/**********************************************************************************************************/
+
+// function getMessage() {
+// 	console.log(`hello function`);
+// }
+// getMessage();
+
+/**********************************************************************************************************/
+
+// let getMessage = () => {
+// 	console.log(`hello arrow function`);
+// };
+
+/**********************************************************************************************************/
+
+// let getRandomNumberFromOneTo = function (limit) {
+// 	return Math.floor(Math.random() * limit + 1);
+// };
+// let result = getRandomNumberFromOneTo(10);
+// let result2 = getRandomNumberFromOneTo(100);
+// console.log(result, result2);
+
+/**********************************************************************************************************/
+
+// function askForNumber(message,min,max) {
+// 	let number;
+
+// 	do {
+// 		number = +(prompt(message));
+// 	} while (!number || number < min || number > max);
+// 	return number;
+// }
+
+// let result = askForNumber(`Укажите число от 1 до 10`, 1, 10);
+
+// console.log(result);
+
+/**********************************************************************************************************/
+
+// let animals = [
+// 	{name: `Cows`, amount: 7, width: 3},
+// 	{name: `Chickens`, amount: 30, width: 3},
+// 	{name: `Sheeps`, amount: 20, width: 4},
+// 	{name: `Hourses`, amount: 2, width: 2}
+// ];
+
+// let fruits = [
+// 	{name: `Banana`, amount: 3, width: 3},
+// 	{name: `cherry`, amount: 2, width: 3},
+// 	{name: `apple`, amount: 7, width: 4},
+// 	{name: `pineapple`, amount: 9, width: 2}
+// ];
+
+// function printFarmInventory(data ) {
+// 	for (let item of data) {
+// 		console.log(zeroFill(item.amount, item.width) + ` ` + item.name);
+// 	}
+// }
+
+// function zeroFill(number, width) {
+// 	let string = String(number);
+// 	while (string.length < width) {
+// 		string = `0` + string;
+// 	}
+// 	return string;
+// }
+
+// printFarmInventory(animals);
+// console.log(`--------------------------------`);
+// printFarmInventory(fruits);
+
+
