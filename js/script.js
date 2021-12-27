@@ -1,4 +1,4 @@
-"use strict"
+"use strict";
 // let num = 10.5, num2 = 20;
 // let result = num + num2;
 // console.log(result);
@@ -121,8 +121,8 @@
 
 /**********************************************************************************************************/
 
-// let 
-// 	total = 500, 
+// let
+// 	total = 500,
 // 	cash =  `наличными`,
 // 	cashText = 450,
 // 	cardCash = `картой`;
@@ -320,9 +320,9 @@
 // let dice2 = Math.floor(Math.random() * 3 + 1);
 // let dice3 = Math.floor(Math.random() * 3 + 1);
 // if (dice1 === dice2 && dice2 === dice3) {
-	// 	console.log(`Вы выиграли`);
-	// } else {
-		// 	console.log(``);
+// 	console.log(`Вы выиграли`);
+// } else {
+// 	console.log(``);
 // }
 // console.log(dice1, dice2, dice3);
 
@@ -344,10 +344,10 @@
 // let table = prompt(`${random1} * ${random2}`);
 // while (true) {
 // 	if (table === null) {
-	// 		break;
-	// 	}
-	// 	table = parseInt(`${random1} * ${random2}`);
-	// 	if (table <= 1000) {
+// 		break;
+// 	}
+// 	table = parseInt(`${random1} * ${random2}`);
+// 	if (table <= 1000) {
 // 		+prompt(`${random1} * ${random2}`)
 // 	}
 // }
@@ -430,4 +430,146 @@
 // console.log(`--------------------------------`);
 // printFarmInventory(fruits);
 
+/**********************************************************************************************************/
 
+// function checkNumber() {
+// 	let number = prompt(`Введите число`);
+// 	if (number === null) {
+// 		return (`вы нажали отмену`);
+// 	}
+// 	if (isNaN(number)) {
+// 		return (`вы ввели не число`);
+// 	}
+
+// 	number === +number;
+// 	if (number === 0) {
+// 		return (`вы ввели ноль`);
+// 	} else if (number >= 1){
+// 		return (`Вы ввели положительное число`);
+// 	} else if (number <= -1){
+// 		return (`вы ввели отрицательное число`);
+// 	}
+// }
+
+// let result = checkNumber();
+// alert(result);
+
+/**********************************************************************************************************/
+
+// let number = 0;
+
+// let square = function (number) {
+// 	return number * number;
+// };
+
+// console.log(square(4));
+// console.log(square(5));
+// console.log(number);
+
+/**********************************************************************************************************/
+
+// let counter = 0;
+
+// let increase = function () {
+// 	let dice = Math.floor( Math.random() * 6 + 1);
+// 	counter++;
+// };
+
+// increase();
+// increase();
+// increase();
+
+// console.log(counter);
+
+/**********************************************************************************************************/
+
+// let Phone = {
+// 	brand: `Iphone`,
+// 	model: `13 pro MAX`,
+// 	rom: `512gb`,
+// 	ram: `12gb`,
+// 	getFullName: function () {
+// 		console.log(this);
+// 		return this.brand + ` - ` + this.model;
+// 	}
+// }
+
+// console.log(Phone.getFullName());
+
+/**********************************************************************************************************/
+
+// const Calc = {
+// 	a: 0,
+// 	b: 0,
+// 	read: function (num1, num2) {
+// 		this.a = num1;
+// 		this.b = num2;
+// 	},
+// 	sum: function () {
+// 		return this.a + this.b;
+// 	},
+// 	substract(){
+// 		return this.a - this.b;
+// 	}
+// };
+
+// Calc.read(10,5);
+
+// console.log(Calc.substract());
+
+/**********************************************************************************************************/
+
+// const Dispenser = {
+// 	water: 19,
+// 	fill(ml){
+// 		if (this.water > 0) {
+// 			this.water -= ml / 1000;
+// 			console.log(`наполнили емкость`);
+// 			console.log(this.info());
+// 		} else {
+// 			console.log(`нет воды`);
+// 		}
+// 	},
+// 	info(){
+// 		return `В емкости осталось ` + this.water;
+// 	}
+// };
+
+// Dispenser.fill(200);
+// Dispenser.fill(18.8 * 1000);
+// Dispenser.fill(200);
+
+/**********************************************************************************************************/
+
+// function cookingEggs(eggs) {
+// 	return  Math.ceil(eggs / 8) * 5;
+// }
+
+// console.log(cookingEggs(25));
+
+/**********************************************************************************************************/
+
+// let Circle = {
+// 	radius: 0,
+// 	read (rad) {
+// 		this.radius = rad;
+// 	},
+//   square() {
+//     return Math.PI * Math.pow(this.radius, 2);
+//   },
+//   length() {
+//     return Math.PI * 2 * this.radius;
+//   },
+// };
+// let radius = +prompt(`Введите радиус круга`);
+// Circle.read(radius);
+// console.log(Circle.square());
+// console.log(Circle.length());
+
+/**********************************************************************************************************/
+
+let Elevator = {
+	printFloor(){
+		return 
+	}
+}
