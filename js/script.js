@@ -568,8 +568,116 @@
 
 /**********************************************************************************************************/
 
-let Elevator = {
-	printFloor(){
-		return 
-	}
-}
+// let Elevator = {
+// 	printFloor(){
+// 		console.log(`текущий этаж`);
+// 	},
+// 	toFloor(){
+
+// 	}
+// }
+
+/**********************************************************************************************************/
+
+// let numbers = [];
+
+// while (true) {
+// 	let num = prompt(`Укажите число`);
+
+// 	if (num === null) {
+// 		alert(`Вы отменили программу`);
+// 		break;
+// 	}
+
+// 	num = +num;
+
+// 	if (num < 1 || num > 100) {
+// 		alert(`Введите корректно данные`);
+// 		continue;
+// 	}
+
+// 	numbers.push(num);
+// }
+
+// console.log(numbers);
+
+/**********************************************************************************************************/
+
+// let getRandomInt = function (min, max) {
+// 	return Math.floor(Math.random() *  (max - min + 1) ) + min;
+// };
+
+// let chance = getRandomInt(1,2);
+
+// if (chance === 2) {
+// 	console.log(`Данный код выведется с вероятностью 50%`);
+// }
+
+/**********************************************************************************************************/
+
+// let FruitBox = {
+// 		 fruits: {
+// 		`banana`: 0,
+// 		`apple`: 0,
+// 		`pear`: 0,
+// 		`orange`: 0
+// 	},
+// 		addFruits(fname){
+// 			switch (fname) {
+// 				case `banana`:
+// 				case `apple`:
+// 				case `pear`:
+// 				case `orange`:
+// 					this.fruits[fname]++;
+// 				break;
+// 				default: console.log(`нет ящиков под этот фрукт`);
+// 		}
+
+// 	}
+// };
+
+// FruitBox.addFruits(`banana`);
+// FruitBox.addFruits(`banana`);
+// FruitBox.addFruits(`apple`);
+// FruitBox.addFruits(`apple`);
+// FruitBox.addFruits(`pear`);
+// FruitBox.addFruits(`pear`);
+
+/**********************************************************************************************************/
+
+// const Shooter = {
+// 	targets: [],
+// 	shootAtTargets(tCount){
+// 		for (let index = 0; index < tCount; index++) {
+// 			let chance = getRandomInt(1,100);
+// 			let shot = {
+// 				number: index + 1
+// 			};
+// 			if (chance < 80) {
+// 				shot.status = true;
+// 			} else {
+// 				shot.status = false;
+
+// 			}
+// 			this.targets.push(shot)
+// 		}
+
+// 	},
+// 	accuracy(){
+// 		this.status / this.shot * 100;
+// 	},
+// 	getTargetSuccess(){
+
+// 	},
+// 	getTargetFailure(){
+
+// 	}
+// };
+
+// let getRandomInt = function (min, max) {
+// 	return Math.floor(Math.random() *  (max - min + 1) ) + min;
+// };
+
+// Shooter.shootAtTargets(10);
+
+// console.log(Shooter.targets);
